@@ -1,0 +1,79 @@
+{
+  "projects": [
+    {
+      "projectName": "Primo.ai",
+      "tags": ["React.js", "Express.js", "Mongoose"],
+      "projectDescription": "A W.I.P GenAI based App that helps prepare for interviews.",
+      "publishedDate": "5/2/2024",
+      "githubLink": "",
+      "deploymentLink": "https://ai-interview-1-0.vercel.app/",
+      "position": "Lead Backend Developer"
+    },
+    {
+      "projectName": "Dijitaization",
+      "tags": ["Express.js", "Mongoose", "MongoDB", "Node.js"],
+      "projectDescription": "Dijitzation is a cutting-edge platform designed to  optimize digital processes.",
+      "publishedDate": "5/2/2024",
+      "githubLink": "https://github.com/Tamdupagal/DAS-DAP-Backend",
+      "deploymentLink": "https://dijitization-hp8igju8g-tamdupagal.vercel.app/",
+      "position": "Lead Backend Developer"
+    },
+    {
+      "projectName": "The City High School",
+      "tags": ["HTML", "CSS", "Javascript", "TailwindCSS"],
+      "projectDescription": "Modern single page web application for The City Group of Schools",
+      "publishedDate": "5/2/2024",
+      "githubLink": "",
+      "deploymentLink": "https://6624d7336fb671920a3c69f7--sparkly-selkie-013e63.netlify.app/",
+      "position": "Lead Backend Developer"
+    },
+    {
+      "projectName": "Express - Template",
+      "tags": ["Node.js", "Express.js", "Mongoose", "MongoDB"],
+      "projectDescription": "CRUD application template built using Express and Node.js",
+      "publishedDate": "5/2/2024",
+      "githubLink": "https://github.com/iHaroon29/Express-Template",
+      "deploymentLink": ""
+    },
+    {
+      "projectName": "Synth",
+      "tags": ["HTML", "CSS", "Javascript", "TailwindCSS"],
+      "projectDescription": "This is a electronic synthesizer built using HTML, TailwindCss, and JavaScript.",
+      "publishedDate": "5/2/2024",
+      "githubLink": "https://github.com/iHaroon29/Synth",
+      "deploymentLink": ""
+    },
+    {
+      "projectName": "Node-Seal",
+      "tags": ["React.js", "Solidity", "Express.js", "Mongoose"],
+      "projectDescription": "Implementation of Homomorphic Encryption for Pub available BlockChain",
+      "publishedDate": "5/2/2024",
+      "githubLink": "https://github.com/iHaroon29/SEAL_NODE",
+      "deploymentLink": ""
+    },
+    {
+      "projectName": "Zipper",
+      "tags": ["Node.js", "GZip", "Data Streams", "Brotli's"],
+      "projectDescription": "File Zipping application running on Gzip and Brotlis compression algorithms",
+      "publishedDate": "5/2/2024",
+      "githubLink": "https://github.com/iHaroon29/Zipper",
+      "deploymentLink": ""
+    },
+    {
+      "projectName": "Todo-CLI",
+      "tags": ["Node.js"],
+      "projectDescription": "Fun Todo Application that runs in your Command line interface.",
+      "publishedDate": "5/2/2024",
+      "githubLink": "https://github.com/iHaroon29/Todo-CLI",
+      "deploymentLink": ""
+    },
+    {
+      "projectName": "Todo-CLI",
+      "tags": ["Node.js"],
+      "projectDescription": "Fun Todo Application that runs in your Command line interface.",
+      "publishedDate": "5/2/2024",
+      "githubLink": "https://github.com/iHaroon29/Todo-CLI",
+      "deploymentLink": ""
+    }
+  ]
+}
