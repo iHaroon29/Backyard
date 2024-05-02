@@ -21,7 +21,7 @@ export const TransitionAnimation = () => {
           unmountOnExit
         >
           {() => (
-            <div ref={nodeRef} className='page'>
+            <div ref={nodeRef} className='page h-[80%]'>
               {outlet}
             </div>
           )}

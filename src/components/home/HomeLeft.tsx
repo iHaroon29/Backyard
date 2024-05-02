@@ -1,6 +1,5 @@
 import { Github, Linkedin, Twitter, FileText } from 'lucide-react'
 import { ReactNode } from 'react'
-import icon from '../../assets/free.svg'
 
 type Props = {
   children?: ReactNode
@@ -10,7 +9,7 @@ type Props = {
 export const HomeLeft = ({ theme }: Props) => {
   const bodyClassList = `${
     theme === 'dark' ? 'text-black' : 'text-white'
-  } w-full h-[40%] p-4 flex flex-row items-center justify-center md:h-full md:w-1/2`
+  } w-full h-[50%]  p-4 flex flex-row items-center justify-center md:h-full md:w-1/2`
   return (
     <div className={bodyClassList}>
       <div className='rounded-lg'>
@@ -32,9 +31,6 @@ export const HomeLeft = ({ theme }: Props) => {
           </div>
           <div className='icon-border p-2  rounded-xl hover:bg-red-500 hover:text-white ease-in-out'>
             <FileText size={24} />
-          </div>
-          <div className='icon-border p-2  rounded-xl hover:bg-red-500 hover:text-white ease-in-out'>
-            <img src={icon} alt='freecodecamp' />
           </div>
         </div>
       </div>
