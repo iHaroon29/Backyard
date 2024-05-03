@@ -9,14 +9,14 @@ type Props = {
 export const HomeLeft = ({ theme }: Props) => {
   const bodyClassList = `${
     theme === 'dark' ? 'text-black' : 'text-white'
-  } w-full h-[50%]  p-4 flex flex-row items-center justify-center md:h-full md:w-1/2`
+  } w-full h-[45%] p-4 flex flex-row items-center justify-center sm:h-full sm:w-1/2`
   return (
     <div className={bodyClassList}>
       <div className='rounded-lg'>
-        <h2 className='text-[2.8rem] text-center lg:text-6xl lg:mb-4'>
+        <h2 className='text-3xl text-center sm:text-5xl lg:text-8xl lg:mb-4'>
           Hello! I'm Haroon.
         </h2>
-        <p className='scroll-m-20 text-xl tracking-tight text-center text-slate-700 bg-slate-200 italic p-4 rounded lg:text-2xl'>
+        <p className='scroll-m-20 text-lg tracking-tight text-center text-slate-700 bg-slate-200 italic p-2 rounded sm:p-4 lg:text-2xl'>
           A Javascript Programmer and League of Legends enthusiast.
         </p>
         <div className='flex w-full justify-center mt-4'>

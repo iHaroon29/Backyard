@@ -17,7 +17,7 @@ export const Navbar = ({ theme }: Props) => {
   }`
   return (
     <NavigationMenu className={classList}>
-      <NavigationMenuList className='flex items-center justify-evenly my-2'>
+      <NavigationMenuList className='flex items-center justify-evenly'>
         <NavLink
           to='/'
           className={({ isActive }) => (isActive ? activeClassList : undefined)}

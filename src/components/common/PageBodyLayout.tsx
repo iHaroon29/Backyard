@@ -6,9 +6,9 @@ type Props = {
   pageName?: string
 }
 export const PageBodyLayout = ({ children, className, pageName }: Props) => {
-  const classList = `w-full dark:bg-[#f0f0f0] bg-[#030711] rounded-md mx-auto mt-3 lg:mt-7 ${
+  const classList = `w-full dark:bg-[#f0f0f0] bg-[#030711] rounded-md mx-auto mt-3 sm:mt-7 ${
     className ?? ''
-  } 2xl:w-[80%] h-full`
+  } w-[90%] h-[100%] sm:w-[80%]`
 
   return (
     <div className={classList}>
