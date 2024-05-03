@@ -4,37 +4,38 @@ import {
 } from '@radix-ui/react-navigation-menu'
 import { NavLink } from 'react-router-dom'
 import { ModeToggle } from './common/ModeToggle'
-import { Home, BookOpenText, Code } from 'lucide-react'
+import { Home, BookOpenText, CodeXml } from 'lucide-react'
 
-type Props = {
-  theme?: string
-}
-
-export const Navbar = ({ theme }: Props) => {
-  const classList = `p-1 rounded-full border shadow-2xl w-[250px] dark:bg-[#1f2937]`
-  const activeClassList = `border-b pb-1 ${
-    theme === 'light' ? 'border-black' : 'border-white'
-  }`
+export const Navbar = () => {
+  const classList = `nav flex items-center w-full h-full sm:relative sm:w-[250px] sm:rounded-full light:bg-[#030711]`
+  const baseClass = 'p-2'
+  const activeClassList = ` text-white bg-[#030711] rounded-xl dark:bg-white dark:text-black`
   return (
     <NavigationMenu className={classList}>
-      <NavigationMenuList className='flex items-center justify-evenly'>
+      <NavigationMenuList className='grid grid-flow-col grid-cols-4 justify-items-center h-full content-center'>
         <NavLink
           to='/'
-          className={({ isActive }) => (isActive ? activeClassList : undefined)}
+          className={({ isActive }) =>
+            isActive ? baseClass + activeClassList : baseClass
+          }
         >
-          <Home />
+          <Home size={32} />
         </NavLink>
         <NavLink
           to='/blogs'
-          className={({ isActive }) => (isActive ? activeClassList : undefined)}
+          className={({ isActive }) =>
+            isActive ? baseClass + activeClassList : baseClass
+          }
         >
-          <BookOpenText />
+          <BookOpenText size={32} />
         </NavLink>
         <NavLink
           to='/projects'
-          className={({ isActive }) => (isActive ? activeClassList : undefined)}
+          className={({ isActive }) =>
+            isActive ? baseClass + activeClassList : baseClass
+          }
         >
-          <Code />
+          <CodeXml size={32} />
         </NavLink>
         <ModeToggle />
       </NavigationMenuList>

@@ -24,7 +24,7 @@ export function ModeToggle({ className }: Props) {
       onClick={toggleTheme}
       className={className}
     >
-      {theme === 'light' ? <Sun /> : <Moon />}
+      {theme === 'light' ? <Sun size={32} /> : <Moon size={32} />}
       <span className='sr-only'>Toggle theme</span>
     </Button>
   )

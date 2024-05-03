@@ -6,14 +6,14 @@ type Props = {
   pageName?: string
 }
 export const PageBodyLayout = ({ children, className, pageName }: Props) => {
-  const classList = `w-full dark:bg-[#f0f0f0] bg-[#030711] rounded-md mx-auto mt-3 sm:mt-7 ${
-    className ?? ''
-  } w-[90%] h-[100%] sm:w-[80%]`
+  const classList =
+    `w-full h-full bg-[#030711] sm:w-[80%] sm:mx-auto dark:bg-[#f0f0f0] sm:rounded-lg ` +
+    (className ? className : '')
 
   return (
     <div className={classList}>
       {pageName ? (
-        <h2 className='px-4 py-1 text-xl font-light tracking-tight text-center inline-block rounded ml-5 mt-5 mb-3 dark:bg-[#030711] bg-[#f0f0f0]'>
+        <h2 className='px-3 py-1 text-xl font-light tracking-tight inline-block rounded-md ml-4 mt-5 mb-3 bg-[#ffffff] dark:bg-[#030711]'>
           {pageName}
         </h2>
       ) : null}

@@ -9,7 +9,7 @@ type Props = {
 export const HomeLeft = ({ theme }: Props) => {
   const bodyClassList = `${
     theme === 'dark' ? 'text-black' : 'text-white'
-  } w-full h-[45%] p-4 flex flex-row items-center justify-center sm:h-full sm:w-1/2`
+  } w-full h-full p-4 flex flex-row items-center justify-center sm:w-1/2`
   return (
     <div className={bodyClassList}>
       <div className='rounded-lg'>
@@ -21,16 +21,16 @@ export const HomeLeft = ({ theme }: Props) => {
         </p>
         <div className='flex w-full justify-center mt-4'>
           <div className='icon-border p-2 rounded-xl hover:bg-black hover:text-white ease-in-out'>
-            <Github size={24} />
+            <Github size={32} />
           </div>
           <div className='icon-border p-2  rounded-xl hover:bg-[#005b8e] hover:text-white ease-in-out'>
-            <Linkedin size={24} />
+            <Linkedin size={32} />
           </div>
           <div className='icon-border p-2  rounded-xl hover:bg-[#0aa4fc] hover:text-white ease-in-out'>
-            <Twitter size={24} />
+            <Twitter size={32} />
           </div>
           <div className='icon-border p-2  rounded-xl hover:bg-red-500 hover:text-white ease-in-out'>
-            <FileText size={24} />
+            <FileText size={32} />
           </div>
         </div>
       </div>

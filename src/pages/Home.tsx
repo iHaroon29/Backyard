@@ -6,7 +6,7 @@ import { HomeRight } from '@/components/home/HomeRight'
 export const HomePage = () => {
   const { theme } = useTheme()
   return (
-    <PageBodyLayout className='flex flex-col xl:flex-row-reverse'>
+    <PageBodyLayout className='flex'>
       <HomeLeft theme={theme} />
       <HomeRight />
     </PageBodyLayout>

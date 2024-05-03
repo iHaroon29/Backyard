@@ -1,12 +1,10 @@
-import { useTheme } from '@/hooks/useTheme'
 import { Navbar } from '../Navbar'
 
 export const Header = () => {
-  const { theme } = useTheme()
-  const classList = `flex pt-2 justify-center text-lg h-content`
+  const classList = `flex justify-center absolute bottom-0 w-full h-[12%] sm:relative sm:h-[10%]`
   return (
     <div className={classList}>
-      <Navbar theme={theme} />
+      <Navbar />
     </div>
   )
 }
