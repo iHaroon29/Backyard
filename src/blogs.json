@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "title": "Chrono Trigger",
+      "subTitle": "RPG to beat them all",
+      "description": "lorem2123123",
+      "wordCount": 200,
+      "thumbNail": "Test",
+      "slug": "chrono-trigger",
+      "catergory": "gaming"
+    },
+    {
+      "title": "Fallout:New Vegas",
+      "subTitle": "RPG to beat them all",
+      "description": "lorem2123123",
+      "wordCount": 200,
+      "thumbNail": "Test",
+      "slug": "fallout-new-vegas",
+      "catergory": "gaming"
+    }
+  ]
+}

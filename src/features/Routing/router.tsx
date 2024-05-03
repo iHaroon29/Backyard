@@ -1,12 +1,13 @@
+import { createRef } from 'react'
 import { createBrowserRouter } from 'react-router-dom'
 import { HomePage } from '../../pages/Home'
 import { Blogs } from '../../pages/Blogs'
 import { ErrorBoundary } from './errorBoundary/ErrorBoundry'
 import { Projects } from '@/pages/Projects'
 import { TransitionAnimation } from '../TransitionAnimations/TransitionAnimations'
-import { createRef } from 'react'
 import { NotFoundPage } from '@/pages/404'
 import { Project } from '@/pages/Project'
+import { BlogPage } from '@/pages/BlogPage'
 
 export const routes = [
   {
@@ -16,8 +17,8 @@ export const routes = [
     nodeRef: createRef<HTMLDivElement>(),
   },
   {
-    path: '/blog',
-    name: 'blog',
+    path: '/blogs',
+    name: 'blogs',
     element: <Blogs />,
     nodeRef: createRef<HTMLDivElement>(),
   },
@@ -28,9 +29,15 @@ export const routes = [
     nodeRef: createRef<HTMLDivElement>(),
   },
   {
-    path: '/projects/:name',
+    path: '/projects/:project-name',
     name: 'project',
     element: <Project />,
+    nodeRef: createRef<HTMLDivElement>(),
+  },
+  {
+    path: '/blogs/:blog-title',
+    name: 'blogs',
+    element: <BlogPage />,
     nodeRef: createRef<HTMLDivElement>(),
   },
   {

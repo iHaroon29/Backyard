@@ -25,7 +25,7 @@ export const Navbar = ({ theme }: Props) => {
           <Home />
         </NavLink>
         <NavLink
-          to='/blog'
+          to='/blogs'
           className={({ isActive }) => (isActive ? activeClassList : undefined)}
         >
           <BookOpenText />

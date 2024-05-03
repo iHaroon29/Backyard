@@ -1,5 +1,6 @@
 import { fontFamily } from 'tailwindcss/defaultTheme'
 import animations from 'tailwindcss-animate'
+import typography from 'tailwindcss/'
 /** @type {import('tailwindcss').Config} */
 export const darkMode = ['class']
 export const content = ['./**/*.{ts,tsx}']
@@ -71,4 +72,4 @@ export const theme = {
     },
   },
 }
-export const plugins = [animations]
+export const plugins = [animations, require('@tailwindcss/typography')]
