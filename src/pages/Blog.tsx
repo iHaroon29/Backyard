@@ -24,14 +24,12 @@ export const Blog = ({ blogData }: Props) => {
         <Gamepad size={24} />
       </span>
 
-      <a href='#'>
-        <h3 className='mt-0.5 text-lg font-medium text-gray-900'>
-          {blogData.title}
-        </h3>
-      </a>
+      <h3 className='mt-0.5 text-lg font-medium text-gray-900'>
+        {blogData.title}
+      </h3>
 
       <p className='mt-2 line-clamp-3 text-sm/relaxed text-gray-500'>
-        {blogData.description}
+        {blogData.description.slice(0, 40) + '...'}
       </p>
 
       <Link

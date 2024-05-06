@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className='hidden sm:block bg-white rounded-lg shadow mx-auto dark:bg-gray-800 mt-2 sm:mt-5 w-[93%] h-content'>
+    <footer className='hidden h-content mx-auto mt-2 rounded-lg sm:block sm:mt-5 light:bg-white'>
       <div className='w-full p-3 flex justify-center '>
         <span className='text-sm text-gray-500 dark:text-white'>
           © 2024 . All Rights Reserved.
