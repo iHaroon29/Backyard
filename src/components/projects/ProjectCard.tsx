@@ -1,4 +1,3 @@
-import { ExternalLink, Github } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 type ProjectInfo = {
@@ -8,65 +7,53 @@ type ProjectInfo = {
   publishedDate: string
   githubLink: string | null
   deploymentLink: string | null
+  readMore: boolean
 }
 type Props = {
   project: ProjectInfo
 }
 
 export const ProjectCard = ({ project }: Props) => {
-  const {
-    deploymentLink,
-    githubLink,
-    projectDescription,
-    projectName,
-    publishedDate,
-    tags,
-  } = project
+  const { projectDescription, projectName, publishedDate, tags, readMore } =
+    project
   return (
-    <article className='rounded-xl'>
-      <div className='rounded-[10px] bg-white p-4'>
+    <article className='rounded-xl transition hover:shadow-lg bg-white dark:bg-[#030711]'>
+      <div className='rounded-[10px] p-4 h-full'>
         <time
           dateTime='2022-10-10'
-          className='text-sm text-gray-500 bg-slate-100 px-2 py-1 inline-block rounded-full'
+          className='text-sm text-gray-700 bg-slate-100 px-2 py-1 inline-block rounded-md'
         >
           {publishedDate}
         </time>
 
-        <h3 className='mt-2 text-3xl font-medium text-gray-900 lg:text-4xl'>
+        <h3 className='mt-4 text-3xl font-medium tracking-tight lg:text-4xl'>
           {projectName}
         </h3>
 
-        <p className='mt-3 bg-slate-100 text-slate-600 p-1 rounded-md text-md italic'>
-          "{projectDescription}"
+        <p className='mt-4 bg-slate-100 text-slate-600 p-2 rounded-md text-lg tracking-tight'>
+          {projectDescription}
         </p>
 
-        <div className='mt-3 flex flex-wrap justify-left gap-1'>
+        <div className='mt-4 flex flex-wrap justify-left gap-1'>
           {tags.map((tag) => {
             return (
-              <span className='whitespace-nowrap rounded-full bg-purple-100 px-2 py-1 text-sm text-purple-600'>
+              <span className='whitespace-nowrap rounded-md bg-purple-100 px-2 py-1 text-sm text-purple-600'>
                 {tag}
               </span>
             )
           })}
         </div>
 
-        <div className='icon-holder flex mt-3 w-[23%] justify-between text-[#030711]'>
-          {githubLink ? (
+        <div className='icon-holder flex mt-4 w-content justify-center items-center'>
+          {readMore ? (
             <Link
-              to={githubLink ? githubLink : ''}
-              target='_blank'
-              className='p-1'
+              className='group inline-flex items-center p-2 bg-[#030711] text-white text-md font-medium rounded-md dark:bg-white dark:text-black'
+              to={`/project/${projectName
+                .split(' ')
+                .map((node) => node.toLowerCase())
+                .join('-')}`}
             >
-              <Github size={28} />
-            </Link>
-          ) : null}
-          {deploymentLink ? (
-            <Link
-              to={deploymentLink ? deploymentLink : ''}
-              target='_blank'
-              className='p-1'
-            >
-              <ExternalLink size={28} />
+              Read More
             </Link>
           ) : null}
         </div>

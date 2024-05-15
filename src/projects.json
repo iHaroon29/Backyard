@@ -7,7 +7,8 @@
       "publishedDate": "5/2/2024",
       "githubLink": "",
       "deploymentLink": "https://ai-interview-1-0.vercel.app/",
-      "position": "Lead Backend Developer"
+      "position": "Lead Backend Developer",
+      "readMore": true
     },
     {
       "projectName": "Dijitaization",
@@ -16,7 +17,8 @@
       "publishedDate": "5/2/2024",
       "githubLink": "https://github.com/Tamdupagal/DAS-DAP-Backend",
       "deploymentLink": "https://dijitization-hp8igju8g-tamdupagal.vercel.app/",
-      "position": "Lead Backend Developer"
+      "position": "Lead Backend Developer",
+      "readMore": true
     },
     {
       "projectName": "The City High School",
@@ -25,15 +27,17 @@
       "publishedDate": "5/2/2024",
       "githubLink": "",
       "deploymentLink": "https://6624d7336fb671920a3c69f7--sparkly-selkie-013e63.netlify.app/",
-      "position": "Lead Backend Developer"
+      "position": "Lead Backend Developer",
+      "readMore": true
     },
     {
-      "projectName": "Express - Template",
+      "projectName": "Express Template",
       "tags": ["Node.js", "Express.js", "Mongoose"],
       "projectDescription": "CRUD application template built using Express and Node.js",
       "publishedDate": "5/2/2024",
       "githubLink": "https://github.com/iHaroon29/Express-Template",
-      "deploymentLink": ""
+      "deploymentLink": "",
+      "readMore": true
     },
     {
       "projectName": "Synth",
@@ -41,15 +45,17 @@
       "projectDescription": "This is a electronic synthesizer built using HTML, TailwindCss, and JavaScript.",
       "publishedDate": "5/2/2024",
       "githubLink": "https://github.com/iHaroon29/Synth",
-      "deploymentLink": ""
+      "deploymentLink": "",
+      "readMore": true
     },
     {
-      "projectName": "Node-Seal",
+      "projectName": "Node Seal",
       "tags": ["React.js", "Solidity", "Express.js", "Mongoose"],
       "projectDescription": "Implementation of Homomorphic Encryption for Pub available BlockChain",
       "publishedDate": "5/2/2024",
       "githubLink": "https://github.com/iHaroon29/SEAL_NODE",
-      "deploymentLink": ""
+      "deploymentLink": "",
+      "readMore": true
     },
     {
       "projectName": "Zipper",
@@ -57,15 +63,17 @@
       "projectDescription": "File Zipping application running on Gzip and Brotlis compression algorithms",
       "publishedDate": "5/2/2024",
       "githubLink": "https://github.com/iHaroon29/Zipper",
-      "deploymentLink": ""
+      "deploymentLink": "",
+      "readMore": true
     },
     {
-      "projectName": "Todo-CLI",
+      "projectName": "Todo CLI",
       "tags": ["Node.js"],
       "projectDescription": "Fun Todo Application that runs in your Command line interface.",
       "publishedDate": "5/2/2024",
       "githubLink": "https://github.com/iHaroon29/Todo-CLI",
-      "deploymentLink": ""
+      "deploymentLink": "",
+      "readMore": true
     }
   ]
 }

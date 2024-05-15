@@ -45,6 +45,14 @@ export const HomeLeft = () => {
             </Button>
           </Link>
         </div>
+        <div className='w-full h-1/4'>
+          <h2 className='text-lg font-light tracking-tight inline-block rounded-md my-4'>
+            Recent Activity
+          </h2>
+          <div className='activity-holder rounded-xl shadow w-full h-[200px]'>
+            <article></article>
+          </div>
+        </div>
       </div>
     </div>
   )

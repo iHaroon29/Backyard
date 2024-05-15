@@ -11,6 +11,7 @@ export const BlogPage = () => {
   const [loading, setLoading] = useState(true)
   const [markdown, setMarkdown] = useState(null)
   const slug = location.pathname.split('/').slice(-1)
+
   useEffect(() => {
     import(`../markdown/${slug}.md`).then((data) => {
       setMarkdown(data.default)
