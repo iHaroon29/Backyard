@@ -19,8 +19,8 @@ type Blog = {
 
 export const Blog = ({ blogData }: Props) => {
   return (
-    <article className='rounded-lg border border-gray-100 bg-white p-4 shadow-sm transition hover:shadow-lg sm:p-6'>
-      <span className='inline-block rounded bg-blue-600 p-2 text-white'>
+    <article className='rounded-lg bg-white p-4 shadow transition hover:shadow-lg sm:p-6'>
+      <span className='inline-block  p-2 rounded'>
         <Gamepad size={24} />
       </span>
 

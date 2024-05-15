@@ -3,7 +3,7 @@ import { Button } from '../ui/button'
 import { Link } from 'react-router-dom'
 
 export const HomeLeft = () => {
-  const bodyClassList = `w-full h-full p-4 flex flex-row items-center text-white justify-center sm:w-1/2 dark:text-black`
+  const bodyClassList = `w-full h-full p-4 flex flex-row items-center text-white justify-center lg:w-1/2 dark:text-black`
   return (
     <div className={bodyClassList}>
       <div className='rounded-lg'>

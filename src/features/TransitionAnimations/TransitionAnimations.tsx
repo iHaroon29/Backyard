@@ -23,7 +23,7 @@ export const TransitionAnimation = () => {
           {() => (
             <div
               ref={nodeRef}
-              className='page h-[88%] sm:h-[80%] overflow-hidden'
+              className='page h-[88%] md:h-[82%] lg:h-[80%] overflow-hidden'
             >
               {outlet}
             </div>
