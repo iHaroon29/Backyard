@@ -3,7 +3,7 @@ import {
   NavigationMenuList,
 } from '@radix-ui/react-navigation-menu'
 import { NavLink } from 'react-router-dom'
-import { ModeToggle } from './common/ModeToggle'
+// import { ModeToggle } from './common/ModeToggle'
 import { Home, BookOpenText, CodeXml } from 'lucide-react'
 
 export const Navbar = () => {
@@ -37,7 +37,7 @@ export const Navbar = () => {
         >
           <CodeXml size={32} />
         </NavLink>
-        <ModeToggle />
+        {/* <ModeToggle /> */}
       </NavigationMenuList>
     </NavigationMenu>
   )
