@@ -17,7 +17,7 @@ export const ProjectCard = ({ project }: Props) => {
   const { projectDescription, projectName, publishedDate, tags, readMore } =
     project
   return (
-    <article className='rounded-xl transition hover:shadow-lg bg-white dark:bg-[#030711]'>
+    <article className='rounded-xl transition hover:shadow-lg bg-white'>
       <div className='rounded-[10px] p-4 h-full'>
         <time
           dateTime='2022-10-10'
@@ -26,7 +26,7 @@ export const ProjectCard = ({ project }: Props) => {
           {publishedDate}
         </time>
 
-        <h3 className='mt-4 text-3xl font-medium tracking-tight lg:text-4xl'>
+        <h3 className='mt-4 text-3xl text-[#282828] font-medium tracking-tight lg:text-4xl'>
           {projectName}
         </h3>
 
@@ -44,10 +44,10 @@ export const ProjectCard = ({ project }: Props) => {
           })}
         </div>
 
-        <div className='icon-holder flex mt-4 w-content justify-center items-center'>
+        <div className='icon-holder flex mt-8 w-content justify-center items-center'>
           {readMore ? (
             <Link
-              className='group inline-flex items-center p-2 bg-[#030711] text-white text-md font-medium rounded-md dark:bg-white dark:text-black'
+              className='group inline-flex items-center text-[#282828] text-md font-medium rounded-md hover:underline'
               to={`/project/${projectName
                 .split(' ')
                 .map((node) => node.toLowerCase())
